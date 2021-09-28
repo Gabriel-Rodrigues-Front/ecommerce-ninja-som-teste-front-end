@@ -1,0 +1,56 @@
+.navMain {
+    overflow-y: hidden;
+    display: flex;
+    margin-top: 24px; 
+    margin-bottom: 34px;
+
+    &__content {
+        @include d-flex-between;
+        width: 100%;
+    }
+
+    &__content__instrument {
+        position: relative;
+    }
+
+    
+
+    &__content__instrument__link img {
+        margin-bottom: 10px;
+        border-radius: 50%;
+        border:1px solid transparent;
+        padding: 10px;
+        transition: 0.5s ease;
+    }
+
+    &__content__instrument__link {
+        @include d-flex-column-center;
+    }
+
+    &__content__instrument__link h4 {
+        color:$primaryColor;
+        font-size: 14px; 
+        font-weight: 700; 
+        letter-spacing: 0.1em;
+    }
+
+    &__content__instrument__link--fade {
+        opacity: 0.5;
+        transition: 0.5s ease;
+    }
+
+    &__content__instrument__link--fade:hover {
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+
+    &__content__instrument:hover &__content__instrument__link img {
+        border:1px solid $primaryColor;
+        transition: 0.5s ease;
+    }
+
+
+
+
+    
+}

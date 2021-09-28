@@ -1,0 +1,145 @@
+.box {
+    @include d-flex-column-center;
+    align-items: flex-start;
+}
+
+.footer {
+    background-color: $primaryColor;
+    &__top {
+        padding: 78px 0;
+        @include d-flex-between;
+        align-items: flex-start;
+
+        &__instituition {
+            @include d-flex-column-center;
+            align-items: flex-start;
+            &__title {
+                @include footer-title;
+            }
+            &__link {
+                @include footer-link;
+            }
+        }
+
+        &__contact {
+            margin-top: 27px;
+            @include d-flex-column-center;
+            align-items: flex-start;
+            &__title {
+                @include footer-title;
+            }
+            &__link {
+                @include footer-link;
+            }
+        }
+
+        &__help {
+            @include d-flex-column-center;
+            align-items: flex-start;
+            &__title {
+                @include footer-title;
+            }
+            &__link {
+                @include footer-link;
+            }
+        }
+
+        &__payment {
+            @include d-flex-column-center;
+            align-items: flex-start;
+            &__title {
+                @include footer-title;
+            }
+            &__brands {
+                max-width: 120px;
+                img {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__security {
+            margin-top: 24px;
+            &__title {
+             @include footer-title;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        &__newsletter {
+            background-color: $secondaryColor;
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            padding: 34px 28px;
+            max-height: 249px;
+            &__title1 {
+                color:$primaryColor;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            &__title2 {
+                font-weight: 700;
+            }
+            &__title3 {
+                color: $primaryColor;
+                font-weight: 400;
+                font-size: 12px;
+                margin-bottom: 28px;
+            }
+
+            &__form {
+              @include d-flex-column-center;
+              align-items: flex-start;
+              input {
+                  padding-bottom: 11px;
+                  margin-bottom: 20px;
+                  border: none;
+                  border-bottom: 1px solid $primaryColor;
+                  width: 100%;  
+                  color: $primaryColor;
+              }
+
+              input:focus {
+                 outline: none;
+              }
+              input::placeholder {
+                color: $primaryColor;
+             }
+
+             &__button {
+                 border: 1px solid $primaryColor;
+                 background-color: $secondaryColor;
+                 padding: 10px 34px;
+                 border-radius: 5px;
+                 font-size: 12px;
+                 font-weight: 700;
+                 cursor: pointer;
+                 color: $primaryColor;
+             }
+           }
+        }
+    }
+
+    &__bottom {
+        background-color: $secondaryColor;
+
+        &__content {
+            @include d-flex-between;
+            padding: 13px 0;
+            &__reservad {
+                color: $primaryColor;
+                font-size: 10px;
+                color:#010101;
+                font-weight: 400;
+            }
+
+            &__brands__logo {
+                margin-right: 45px;
+            }
+        }
+    }
+}
+

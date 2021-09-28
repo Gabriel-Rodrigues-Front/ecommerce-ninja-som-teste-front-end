@@ -1,0 +1,127 @@
+.infos {
+    @include d-flex-column-center;
+    position: relative;
+    &__div {
+        @include d-flex-column-center;
+    margin-bottom: 100px;
+        color: $primaryColor;
+        
+        letter-spacing: 0.1em;
+        @include d-flex-column-center;
+
+        &__title1, &__title2 {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        &__title1 {
+            margin: 0 10px;
+            font-weight: 400;
+        }
+
+        &__phrase {
+            font-size: 15px;
+            letter-spacing: 0.1em;
+            color: #222222;
+            margin-top: 21px;
+        }
+    }
+}
+
+.brands {
+    @include d-flex-between;
+    position: relative;
+    &__svg1:hover {
+        filter:invert(57%) sepia(8%) saturate(748%) hue-rotate(14deg) brightness(99%) contrast(88%);
+    }
+    &__svg2:hover {
+        filter: invert(43%) sepia(59%) saturate(908%) hue-rotate(329deg) brightness(92%) contrast(97%);
+    }
+    &__svg3:hover {
+        filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(79deg) brightness(96%) contrast(100%);
+    }
+    &__svg4:hover {
+        filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(79deg) brightness(96%) contrast(100%);
+    }
+    
+    &__arrowleft, &__arrowright {
+        position: absolute;
+    }
+
+
+    &__arrowleft {
+        left: -90px;
+    }
+    &__arrowright {
+        right: -90px;
+    }
+}
+
+.about {
+    margin-top:130px;
+    margin-bottom: 245px;
+    @include d-flex-column-center;
+    &__title {
+        color: $primaryColor;
+        font-weight: $fontWeight;
+        font-size: 26px;
+        margin-bottom: 33px;
+    }
+    &__description {
+        font-family: $fontSecondary;
+        text-align: center;
+        font-size: 12px;
+        color:#222222;
+    }
+}
+
+.designers {
+    height: 175px;
+    background-color:#F7F7F7;
+    position: absolute;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    --webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    padding: 87px 56px;
+    @include d-flex-between;
+    bottom: -30px;
+    &__arrowLeft {
+        margin-right: 15px;
+    }
+    &__arrowRight {
+        margin-left: 15px;
+    }
+    &__description {
+        @include d-flex-center;
+
+        &__personalinfos {
+            @include d-flex-center;
+
+            &__data {
+                color: $primaryColor;
+                margin-left: 10px;
+
+                &__name {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+                &__occupation {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        &__text {
+            background: #FFFFFF;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            padding: 23px 43px;
+            font-size: 13px;
+            color: #2F2F2F;
+            margin-left: 16px;
+        }
+    }
+}

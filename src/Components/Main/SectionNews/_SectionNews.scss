@@ -1,0 +1,100 @@
+.sectionNews {
+    width: 100%;
+    @include d-flex-between;
+
+    &__new {
+        width: 50%;
+        max-height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       img {
+           width: 100%;
+          height: auto;
+          min-height: 300px;
+       }
+    }
+
+    &__new::before {
+        content: '';
+        background: linear-gradient(180deg, rgba(15, 15, 15, 0) 6.66%, rgba(0, 0, 0, 0.7) 63.18%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    &__new__content {
+     
+        position: absolute;
+        z-index: 9999;
+        @include d-flex-column-center;
+    }
+
+    &__new__content__divtitle {
+      @include d-flex-column-center;
+      position: relative;
+    }
+
+    &__new__content__divtitle::after {
+        content: '';
+        width: 18px;
+        height: 1px;
+        background-color: #fff;
+    }
+
+    &__new__content__divtitle__content{
+        font-size: 13px;
+        color: $secondaryColor;
+        font-weight: 300;
+        letter-spacing: 0.4em;
+        margin-bottom: 11px;
+    }
+
+    &__new__content__title::after {
+        content: ' ';
+        width: 18px;
+        height: 1px;
+        position: absolute;
+        background-color: #fff;
+    }
+
+    &__new__content__description1 {
+        color: $secondaryColor;
+        font-size: 41px;
+        margin-top: 18px;
+        font-weight: $fontWeight;
+        letter-spacing: 0.09em;
+    }
+
+    &__new__content__description2 {
+        color: $secondaryColor;
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 0.12em;
+        margin-bottom: 30px;
+    }
+
+    &__new__content__button {
+        width: 153px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 13px;
+        color: $secondaryColor;
+        letter-spacing: 0.1em;
+        border: 1px solid #fff;
+        @include d-flex-center;
+        border-radius: 5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius: 12px; 
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #fff;
+            color: black;
+            transition: 0.5s;
+        }
+    }
+
+}
