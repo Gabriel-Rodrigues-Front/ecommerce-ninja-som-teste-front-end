@@ -1,7 +1,9 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End
 
 
-## Start Projeto Econverse - Loja de Instrumentos Musicais Ninja Som
+## Start Projeto Econverse - Loja de Instrumentos Musicais Ninja Som 
+
+### Layout Extraído do Figma.
 
 ##### Após realizar o clone do projeto, entrar no terminal no diretório onde o projeto foi baixado e executar o comando npm install, para instalar as dependências do package.json.
 ##### em seguida, realizar o comando npm/ npx/ yarn start no diretório para iniciar o projeto.
