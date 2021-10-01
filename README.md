@@ -15,6 +15,9 @@
 ###### Vitrine ![vitrine](https://i.postimg.cc/zGCpvWGd/print3.png)
 <hr>
 
+###### Modal Produto ![modal-produto](https://i.postimg.cc/fTXS4SZ5/print6.png)
+<hr>
+
 ###### Marcas ![brands](https://i.postimg.cc/FH5DhGNd/print4.png)
 <hr>
 
