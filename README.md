@@ -9,4 +9,16 @@
 ###### Header e slider ![header-slider](https://i.postimg.cc/tTTzBMtf/print1.png)
 <hr>
 
+###### Navegação Instrumentos + Novidades ![nav-news](https://i.postimg.cc/Xvx8cbFd/print2.png)
+<hr>
+
+###### Vitrine ![vitrine](https://i.postimg.cc/zGCpvWGd/print3.png)
+<hr>
+
+###### Marcas ![brands](https://i.postimg.cc/FH5DhGNd/print4.png)
+<hr>
+
+###### Rodapé ![footer](https://i.postimg.cc/GpbKy2Bb/print5.png)
+<hr>
+
 
